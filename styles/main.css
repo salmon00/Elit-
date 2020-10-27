@@ -1,0 +1,470 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;       
+    /*display: flex;
+    flex-direction: row; 
+    justify-content: space-between; */  
+}
+
+.navigation {
+    width: 20vw;
+    height: 100vh;
+    /*border: 2px solid red;*/   
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    width: fit-content;
+    height: fit-content;
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: white;
+    font-size: xx-large;
+    margin-top: 30px;
+    font-family: 'Expletus Sans', cursive;
+    margin-left: 30px;
+    /*border: 2px solid red;*/
+}
+
+.menu {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 30px;
+    /*border: 2px solid blue;*/
+}
+
+.photos {
+    font-family: cursive; 
+    font-size: medium;
+    font-weight: lighter;
+    text-decoration: none;
+    color: white;
+    width: fit-content;     
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.photos:hover {
+    color: #3d2e05;
+  }
+
+.icons {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+div a img {
+    width: 30px;
+    height: 30px;    
+}
+
+.main-content {
+    width: 80vw;    
+    height: 100vh;
+    /*border: 2px solid yellow;*/
+    margin-left: 20vw;    
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 80vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(36, 36, 36, 0.507), rgba(37, 37, 37, 0.274)), url(../assets/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    /*border: 2px solid white;*/    
+}
+
+.header-body {
+    height: fit-content;   
+    /*border: 2px solid green;*/ 
+    text-align: center;
+    margin: 200px;  
+}
+
+.header-heading {
+    font-size: 65px;
+    font-weight: 500;
+    font-family: 'DM Serif Display', serif;
+    text-transform: uppercase;
+    vertical-align: top; 
+    color: white;
+    /*border: 2px solid red;*/
+}
+
+.header-subtitle {    
+    font-size: x-large;
+    font-weight: 400; 
+    font-family: "Century Gothic";
+    color: white;
+    margin-top: 80px;
+    /*border: 2px solid pink;*/    
+}
+
+.header-btn-primary {
+    width: 200px;
+    height: 55px;
+    background-color: rgb(77, 68, 53);
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    margin-top: 80px;
+    transition: 0.5s;
+    font-family: "Century Gothic";
+    text-transform: uppercase;
+}
+.header-btn-primary:hover {
+    background-color: rgb(53, 50, 50);
+  }
+.gallery {
+    width: 80vw;
+    height: fit-content;
+    /*border: 2px solid greenyellow;*/    
+}
+
+.gallery-img {
+    width: 33%;
+    height: 300px;
+    margin: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.gallery-img:hover {
+opacity: 0.5;
+}
+
+.biography {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1A1A;
+    /*border: 2px solid rgb(101, 202, 233);*/
+}
+
+.biography-body {
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.biography-title {
+    color: rgb(184, 184, 184);
+    font-size: 66px;
+    font-family: "Rockwell Condensed";    
+}
+
+
+.bio {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.biography-heading-a {
+    color: rgb(184, 184, 184);
+    font-size: 50px;
+    font-family: "Rockwell Condensed";
+}
+
+.biography-subtitle-a {
+    width: 70%;
+    color: rgb(145, 145, 145);
+    /*border: 2px solid white;*/
+    font-family: "Century Gothic";
+}
+
+.span-1 {
+    color: rgb(194, 34, 122);
+}
+
+.biography-heading-b {
+    color: rgb(184, 184, 184);
+    font-size: 50px;
+    font-family: "Rockwell Condensed";
+    margin-top: 50px;
+}
+
+.biography-subtitle-b {
+    width: 70%;
+    color: rgb(145, 145, 145);
+    /*border: 2px solid white;*/
+    font-family: "Century Gothic";
+}
+
+.span-2 {
+    color: rgb(194, 34, 122);
+}
+
+table {
+    /*border: 2px solid blue;*/
+    width: fit-content;
+    margin-top: 50px;
+}
+
+ul {
+    list-style: none;
+    /*border: 2px solid yellow;*/
+}
+
+li {
+    /*border: 2px solid red;*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;  
+}
+
+.icon-tick {
+    width: 15px;
+    height: 15px;
+    /*border: 2px solid rgb(194, 180, 51);*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 15px;
+}
+
+.text {
+    /*border: 2px solid rgb(81, 63, 148);*/
+    color: rgb(204, 201, 201); 
+    font-family: "Century Gothic";
+}
+
+/*BLOG*/
+
+.blog-body {
+    /*border: 2px solid red;*/
+    margin-top: 100px;
+    margin-left: 150px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-heading {
+    color: rgb(184, 184, 184);
+    font-size: 66px;
+    font-family: "Rockwell Condensed";  
+    margin-bottom: 50px;
+    /*border: 2px solid rgb(241, 226, 13);*/
+}
+
+.blog-box {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    /*border: 2px solid rgb(0, 255, 21);*/
+}
+
+.blog-photo {
+    width: fit-content;
+    height: fit-content;
+    object-fit: cover;
+    margin-right: 30px;
+    /*border: 2px solid rgb(25, 0, 255);*/
+}
+img {
+    width: 250px;
+}
+
+.blog-title {
+    width: 300px;
+    /*border: 2px solid yellow;*/
+    
+}
+
+h3 {
+    color: rgb(184, 184, 184);
+    font-size: larger;
+    font-family: "Rockwell Condensed";
+    /*border: 2px solid red;*/
+}
+
+p {
+    
+    font-size: small;
+    color: rgb(145, 145, 145); 
+    font-family: "Century Gothic";
+    /*border: 2px solid rgb(63, 100, 33);*/
+}
+
+.b-date {
+    color: rgb(194, 34, 122);
+}
+
+/*CONTACT*/
+
+.contact {
+    /*border: 2px solid rebeccapurple;*/
+    background-color: #1A1A1A;
+}
+
+.contact-body {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;    
+    /*border: 2px solid yellow;*/
+}
+
+.contact-heading {
+    color: rgb(184, 184, 184);
+    font-size: 66px;
+    font-family: "Rockwell Condensed"; 
+    margin-bottom: 50px;
+    /*border: 2px solid red;*/
+}
+
+.contact-form-1 {
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+  
+    /*border: 2px solid rgb(27, 153, 2);*/
+}
+
+
+
+.first-name {
+    width: 360px;
+    color: rgb(202, 202, 202);
+    font-family: "Century Gothic";
+    
+    /*border: 2px solid rgb(34, 7, 153);*/
+}
+.input-f {
+    width: 360px;
+    background-color: #1A1A1A;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(80, 80, 80);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    color: rgb(216, 216, 216);
+}
+
+.input-f:hover {
+   border-bottom: 2px solid #aaa;   
+}
+.input-f:focus {
+    border-bottom: 2px solid #aaa;    
+}
+
+
+.last-name {
+    width: 375px;
+    margin-left: 15px;
+    color: rgb(202, 202, 202);
+    font-family: "Century Gothic";
+    /*border: 2px solid rgb(182, 185, 0); */ 
+}
+.input-l {
+    width: 375px;
+    background-color: #1A1A1A;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(80, 80, 80);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.5s;   
+    color: rgb(216, 216, 216);
+}
+
+.input-l:hover {
+    border-bottom: 2px solid #aaa;   
+}
+.input-l:focus {
+    border-bottom: 2px solid #aaa;    
+}
+
+.form-2 {
+    width: 750px;
+    color: rgb(202, 202, 202);
+    font-family: "Century Gothic";
+    
+    /*border: 2px solid red;*/
+}
+
+.input {
+    width: 750px;   
+    background-color: #1A1A1A;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(80, 80, 80);
+    margin-top: 20px;
+    margin-bottom: 20px;  
+    transition: 0.5s;   
+    color: rgb(216, 216, 216);
+}
+.input:hover {
+    border-bottom: 2px solid #aaa;   
+}
+
+.input:focus {
+    border-bottom: 2px solid #aaa;    
+}
+
+textarea {
+    height: 150px;
+}
+
+::placeholder {
+    color: rgb(184, 184, 184);
+    font-family: "Century Gothic";
+}
+
+.contact-btn {
+    width: 200px;
+    height: 55px;
+    background-color: rgb(148, 5, 93);
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;  
+    transition: 0.5s;
+    font-family: "Century Gothic";
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.contact-btn:hover {
+    background-color:#33002a;
+}
+
+/*FOOTER*/
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: rgb(97, 97, 97); 
+    font-size: smaller;
+    font-family: "Century Gothic";
+    /*border: 2px solid red;*/
+}
+
+.footer-icon {
+    width: 15px;
+}
+
+.colorlib {
+    color: rgb(194, 34, 122);
+}
